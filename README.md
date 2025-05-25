@@ -26,29 +26,55 @@ Create a directory named "my-folder"
 
 ## COMMAND AND OUTPUT
 
-Remove the directory "my-folder"
+```
+mkdir %userprofile%\Desktop\MyLab
+```
+![Screenshot 2025-05-20 213851](https://github.com/user-attachments/assets/67d57631-ab66-4d22-a146-8115a2e3c0f4)
+
 
 ## COMMAND AND OUTPUT
 
+```
+cd %userprofile%\Desktop\MyLab
+```
 
-Create the file Rose.txt
+![Screenshot 2025-05-20 213859](https://github.com/user-attachments/assets/6a1baf0b-2a0f-4dc2-b4c0-6da8d2fe315d)
 
-## COMMAND AND OUTPUT
+```
+type nul > MyFile.txt
+```
 
+![Screenshot 2025-05-20 213908](https://github.com/user-attachments/assets/0d23b56d-83f1-4e68-adb4-ae3070678ba0)
 
-Create the file hello.txt using echo and redirection
-
-## COMMAND AND OUTPUT
-
-Copy the file hello.txt into the file hello1.txt
-
-## COMMAND AND OUTPUT
-
-Remove the file hello1.txt
 
 ## COMMAND AND OUTPUT
+```
+dir %userprofile%\Desktop\MyLab
+```
+![Screenshot 2025-05-20 213915](https://github.com/user-attachments/assets/0611f82e-d1ac-4b1d-9a41-731ffdcb67f9)
 
-List out the file hello1.txt in the current directory
+
+## COMMAND AND OUTPUT
+```
+mkdir %userprofile%\Desktop\Backup
+```
+![Screenshot 2025-05-20 213922](https://github.com/user-attachments/assets/00649aa1-e258-434c-bdc2-0ce6d179002d)
+
+
+## COMMAND AND OUTPUT
+```
+mkdir %userprofile%\Desktop\Backup
+```
+![Screenshot 2025-05-20 213930](https://github.com/user-attachments/assets/99132b9c-85df-4396-8b03-7a0b2645ef0a)
+
+
+## COMMAND AND OUTPUT
+```
+mkdir %userprofile%\Desktop\Documents
+move MyLab Documents
+```
+![Screenshot 2025-05-20 213939](https://github.com/user-attachments/assets/6f9b1899-fd65-445c-9c2e-ffba94e00cfe)
+
 
 ## COMMAND AND OUTPUT
 
@@ -63,60 +89,24 @@ Compare the file hello.txt and rose.txt
 
 ## Exercise 2: Advanced Batch Scripting
 Create a batch file named on the desktop. The batch file need to have a variable assigned with a desired name for ex. name="John" and display as "Hello, John".
-
-
-
-
-
-## OUTPUT
-
-
-
-Create a batch file  on the desktop that checks whether a user-input number is odd or not. The script should:
-Prompt the user to enter a number.
-Calculate the remainder when the number is divided by 2.
-Display whether the number is odd or not.
-Ask the user if they want to check another number.
-Repeat the process if the user enters Y, and exit with a thank-you message if the user enters N.
-Handle invalid inputs for the continuation prompt (Y/N) gracefully.
-
-
+```
+@echo off
+mkdir %userprofile%\Desktop\DocBackup
+copy %userprofile%\Documents\*.docx %userprofile%\Desktop\DocBackup
+echo Backup completed successfully!
+```
+![Screenshot 2025-05-20 213947](https://github.com/user-attachments/assets/46d023d2-940c-4839-a208-3eefc012d8df)
 
 ## OUTPUT
+```
+  @echo off
+  mkdir %userprofile%\Desktop\DocBackup
+  copy %userprofile%\Documents\*.docx %userprofile%\Desktop\DocBackup
+  del %userprofile%\Documents\*.docx
+  echo Backup and deletion completed successfully!
+```
 
-
-
-
-Write a batch file that uses a FOR loop to iterate over a sequence of numbers (1 to 5) and displays each number with the label Number:. The output should pause at the end.
-
-
-
-
-## OUTPUT
-
-
-
-
-Write a batch script to check whether a file named sample.txt exists in the current directory. If the file exists, display the message sample.txt exists. Otherwise, display sample.txt does not exist. Pause the script at the end to view the result.
-
-Instructions:
-Use the IF EXIST conditional statement.
-Make sure the script works for files located in the same directory as the batch file.
-Use pause to keep the command window open after displaying the message.
-Expected Output (if the file exists):
-
-## OUTPUT
-
-
-Write a batch script that displays a simple menu with three options:
-Say Hello – Displays the message Hello, World!
-Create a File – Creates a file named newfile.txt with the content This is a new file
-Exit – Exits the script with a goodbye message
-The script should repeatedly display the menu until the user chooses to exit. Use goto statements to handle menu navigation.
-
-
-## OUTPUT
-
+![Screenshot 2025-05-20 214011](https://github.com/user-attachments/assets/28aa0f55-9265-4f30-a30d-76685778ae97)
 
 
 # RESULT:
